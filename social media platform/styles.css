@@ -1,0 +1,104 @@
+/* Basic styles for layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .profile, .posts {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile .user-info {
+    text-align: center;
+  }
+  
+  .profile .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .profile button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .profile button:hover {
+    background-color: #555;
+  }
+  
+  .post {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .post:hover {
+    transform: scale(1.05);
+  }
+  
+  .post-actions button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .post-actions button:hover {
+    background-color: #555;
+  }
+  
+  .likes-count {
+    font-weight: bold;
+  }
+  
+  .comments {
+    margin-top: 10px;
+  }
+  
+  .comment {
+    background-color: #ddd;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+  .bio {
+    font-style: italic;
+  }
+  

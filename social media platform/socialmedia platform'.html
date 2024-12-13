@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Platform</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#profile">Profile</a>
+      <a href="#posts">Posts</a>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="profile" class="profile">
+    <h2>User Profile</h2>
+    <div class="user-info">
+      <img src="https://i.postimg.cc/QFDSbXVm/download-10.jpg" alt="User Profile Image" class="profile-img">
+      <h3>Jane Doe</h3>
+      <p>@janedoe</p>
+      <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien quam.</p>
+      <p><strong>Followers:</strong> <span id="followers-count">150</span></p>
+      <button id="follow-btn" onclick="followUser()">Follow</button>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section id="posts" class="posts">
+    <h2>Posts</h2>
+    <div class="post" id="post1">
+      <img src="https://i.postimg.cc/qzyjytBg/download-11.jpg" alt="Post Image" class="post-img">
+      <p>This is Jane's first post! Just exploring social media! 🌟</p>
+      <div class="post-actions">
+        <button onclick="likePost('post1')">❤️ Like</button>
+        <button onclick="toggleComments('post1')">💬 Comment</button>
+        <span class="likes-count" id="likes-count-post1">0</span> Likes
+      </div>
+      <div class="comments" id="comments-post1"></div>
+    </div>
+
+    <div class="post" id="post2">
+      <img src="https://i.postimg.cc/dDz5hRYz/download-12.jpg" alt="Post Image" class="post-img">
+      <p>Feeling great today! ☀️ What's everyone up to?</p>
+      <div class="post-actions">
+        <button onclick="likePost('post2')">❤️ Like</button>
+        <button onclick="toggleComments('post2')">💬 Comment</button>
+        <span class="likes-count" id="likes-count-post2">0</span> Likes
+      </div>
+      <div class="comments" id="comments-post2"></div>
+    </div>
+
+    <div class="post" id="post3">
+      <img src="https://i.postimg.cc/rzdhynv1/download-13.jpg" alt="Post Image" class="post-img">
+      <p>Enjoying a nice cup of coffee! ☕</p>
+      <div class="post-actions">
+        <button onclick="likePost('post3')">❤️ Like</button>
+        <button onclick="toggleComments('post3')">💬 Comment</button>
+        <span class="likes-count" id="likes-count-post3">0</span> Likes
+      </div>
+      <div class="comments" id="comments-post3"></div>
+    </div>
+
+    <div class="post" id="post4">
+      <img src="https://i.postimg.cc/5QFpPyw7/download-14.jpg" alt="Post Image" class="post-img">
+      <p>What a beautiful sunset! 🌅</p>
+      <div class="post-actions">
+        <button onclick="likePost('post4')">❤️ Like</button>
+        <button onclick="toggleComments('post4')">💬 Comment</button>
+        <span class="likes-count" id="likes-count-post4">0</span> Likes
+      </div>
+      <div class="comments" id="comments-post4"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
